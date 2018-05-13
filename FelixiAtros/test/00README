@@ -1,0 +1,5 @@
+LD_LIBRARY_PATH=../iatros-v1.0/build/lib/ ../iatros-v1.0/build/bin/iatros-offline -c felix.cnf
+LD_LIBRARY_PATH=iatros-v1.0/build/lib/ iatros-v1.0/build/bin/iatros-offline -c test/felix.cnf
+
+LD_LIBRARY_PATH=../iatros-v1.0/build/lib/ ../iatros-v1.0/build/bin/iatros-speech-cepstral -c conf.feat -i RAW-FILE -o /tmp/felix.CC
+LD_LIBRARY_PATH=iatros-v1.0/build/lib/ iatros-v1.0/build/bin/iatros-speech-cepstral -c test/conf.feat -i RAW-FILE -o /tmp/felix.CC

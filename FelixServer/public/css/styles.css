@@ -1,0 +1,480 @@
+/* ------------------------------------------- GENERAL STYLES ------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+html{
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif, arial, helvetica;
+}
+
+
+h1{ font-size: 3.7rem; }
+
+h2{ font-size: 2.3rem; }
+
+p{ font-size: 1.35rem; }
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #101010;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #101010;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #101010;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #101010;
+}
+
+.th .td{
+  text-align: center;
+}
+
+/* ------------------------------------------ STARTING STYLES ------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+.felixIp{
+  display: block;
+}
+
+.loader{
+  display: none;
+}
+
+.main{  /* At the beginning, only show insert ip page */
+  display: none;
+}
+
+
+.selectGroup {margin-top: 2.85rem;}
+.buttonsGroup {margin-top: 2.65rem;}
+
+/* --------------------------------------------- LOADER PAGE -------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+.loader{
+  width: 100%;
+  height: 100vh;
+  background: #2f3238;
+}
+
+svg {
+  height: 0px;
+  width: 0px;
+}
+
+@keyframes loaderWorm {
+  50% {
+    transform: translateY(-16px);
+    background-color: #1b98e0;
+  }
+}
+
+.loaderWorm {
+  filter: url("#goo");
+  width: 6.5rem; /*This is the height of the div * 5*/
+  margin: 0 auto;
+  position: relative;
+  top: 50vh;
+  transform: translateY(-10px);
+}
+.loaderWorm > div {
+  float: left;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 100%;
+  background-color: #006494;
+  animation: loaderWorm 0.8s infinite;
+}
+
+.loaderWorm > div:nth-child(1) {
+  animation-delay: 0.16s;
+}
+
+.loaderWorm > div:nth-child(2) {
+  animation-delay: 0.32s;
+}
+
+.loaderWorm > div:nth-child(3) {
+  animation-delay: 0.48s;
+}
+
+.loaderWorm > div:nth-child(4) {
+  animation-delay: 0.64s;
+}
+
+.loaderWorm > div:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+
+
+/* ----------------------------------------- WHERE IS FELIX PAGE ---------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+
+.felixIp{
+  height: 100vh;
+  width: 100%;
+  background: #2f3238;
+  overflow: auto;
+}
+
+.felixIp .whereIsFelix{
+  margin-top: 13rem;
+  margin-bottom: 0;
+  color: #efefef;
+}
+
+.errorMessage{
+  font-size: .84rem;
+  text-align: right;
+  /*color: #da6484;*/
+  color: #c95373;
+  margin: 0 0 -0.64rem 0;
+  padding: 0;
+  width: 100%;
+}
+
+.felixIp .inputIpGroup{
+  margin-top: 0.73rem;
+  background: #3f4248;
+  width: 100%;
+  border: 2.5px solid #1e2127;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 0.20rem 0.27rem 0.2rem 0.75rem;
+}
+
+.felixIp #chipIp{
+  width: 95%;
+  height: 2.2rem;
+  font-size: 1.8rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #b5b5b5;
+}
+
+.submitIp{
+  color:#888;
+  font-size: 1.8rem;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  transition: 0.5s all;
+  position: relative;
+}
+
+.submitIp:hover{
+  color: #eee;
+  cursor: pointer;
+}
+
+
+/* ----------------------------------------- WELCOME FELIX PAGE ----------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+#welcome{
+  background: -webkit-linear-gradient(90deg, #d64759 10%, #da7352 90%); /* Chrome 10+, Saf5.1+ */
+  background: -o-linear-gradient(90deg, #d64759 10%, #da7352 90%); /* Opera 11.10+ */
+  background: -moz-linear-gradient(90deg, #d64759 10%, #da7352 90%); /* FF3.6+ */
+  background: linear-gradient(90deg, #d64759 10%, #da7352 90%); /* W3C */
+  overflow: hidden;
+  color:white;
+}
+
+#felixIntroImg{
+  display: block;
+  margin: auto;
+}
+
+
+
+/* ---------------------------------------- 90 DEGREE CALIBRATION --------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+.h2Calibrations{
+  margin-top: 3rem;
+}
+
+#legsConfiguration{
+  background: -webkit-linear-gradient(80deg, #01a99c 10%, #0698b1 90%); /* Chrome 10+, Saf5.1+ */
+  background: -o-linear-gradient(80deg, #01a99c 10%, #0698b1 90%); /* Opera 11.10+ */
+  background: -moz-linear-gradient(80deg, #01a99c 10%, #0698b1 90%); /* FF3.6+ */
+  background: linear-gradient(80deg, #01a99c 10%, #0698b1 90%); /* W3C */
+  overflow: hidden;
+  color:white;
+}
+
+
+#felixLegsConfig{
+  display: block;
+  margin: auto;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.configButton{
+  width: 3.44rem;
+  color: white;
+  border: 1px solid rgba(222,222,222,0.7);
+  transition: all .5s ease;
+  font-size:1.2rem;
+  margin-top: .2rem;
+}
+
+#legsConfiguration .container button:hover{
+  font-size:1.28rem;
+}
+
+.configButtonHK{
+  width: 4.6rem;
+}
+
+.inputLegsCalibration .inputCustomPoseCalibration{
+  width: 5.5rem;
+}
+
+.inputLegsCalibration:hover{
+  background: inherit;
+  border: 1px solid rgba(222,222,222,0.7);
+  cursor:default;
+}
+
+/* This class is applied to the buttons that the user selected */
+.secSelected{
+  background: rgba(11, 50, 116, 0.51);
+  border: 1px solid rgba(11, 50, 116, 1);
+}
+
+.modal {
+  text-align: center;
+  padding: 0 !important;
+  position: absolute;
+  color: #404142;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; /* Adjusts for spacing */
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-content{
+  padding: 1rem;
+}
+
+.modal-backdrop{
+    position: relative;
+}
+
+
+/* ----------------------------------------- HOME LEG CALIBRATION --------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+#homeLegConfiguration{
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          
+  overflow: hidden;
+  color:white;
+}
+
+/* This class is applied to the buttons that the user selected */
+.secSelectedHomeLeg{
+  background: rgba(236, 236, 236, 0.51);
+  border: 1px solid rgba(108, 122, 137, 1);
+}
+
+#felixhomeLegsConfig{
+  display: block;
+  margin: auto;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+/* -------------------------------------- CUSTOM POSE CONFIGURATION ------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+#customPoseConfiguration{
+  background:#1C4B51; /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to left, #232526 , #414345);  Chrome 10-25, Safari 5.1-6 
+  background: linear-gradient(to left, #232526 , #414345);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          
+  overflow: hidden;
+  color:white;
+}
+
+/* This class is applied to the buttons that the user selected */
+.secSelectedCustomPose{
+  background: rgba(236, 236, 236, 0.51);
+  border: 1px solid rgba(108, 122, 137, 1);
+}
+
+.inputOffsetCustomPose{
+  width: 5.5rem;
+  height: 2.6rem;
+  cursor: auto;
+  vertical-align: middle;
+  background: transparent;
+  text-align: center;
+  border: 1px solid rgba(222,222,222,0.7);
+  border-radius: 5%; 
+}
+
+.inputOffsetCustomPose:focus, .inputOffsetCustomPose:selected{
+  background: transparent;
+  border: 1px solid rgba(222,222,222,0.7);
+}
+
+
+/* --------------------------------------------- FINISH PAGE -------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+#finish{
+  background: -webkit-linear-gradient(90deg, #FD6F46 10%, #FB9832 90%); /* Chrome 10+, Saf5.1+ */
+  background: -o-linear-gradient(90deg, #FD6F46 10%, #FB9832 90%); /* Opera 11.10+ */
+  background: -moz-linear-gradient(90deg, #FD6F46 10%, #FB9832 90%); /* FF3.6+ */
+  background: linear-gradient(90deg, #FD6F46 10%, #FB9832 90%); /* W3C */
+  overflow: hidden;
+  color:white;
+}
+
+.fa-smile-o{
+  font-size: 14rem;
+}
+
+.webCommands{
+  width: 13.3rem;
+  font-size:1.22rem;
+  color: white;
+  border: 1px solid rgba(222,222,222,0.7);
+  transition: all .5s ease;
+  letter-spacing: .17rem;
+  margin-top: 2rem;
+}
+
+.webCommands:hover{
+  background: rgba(185, 53, 58, 0.7);
+  border: 1px solid rgba(185, 53, 58, 0.8);
+}
+
+/* -------------------------------------------- MEDIA QUERIES ------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* Extra small devices (portrait phones, less than 544px) */
+@media (max-width: 1199px) {
+  html{font-size: 15px;}
+  #felixIntroImg{
+    width: 90%;
+    margin-top: 6.5rem;
+  }
+  .felixIp .whereIsFelix{ margin-top: 16.3rem; }
+  p{
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+  }
+  .fa-smile-o{
+    margin-top: 5.3rem;
+  }
+  .done{
+    margin-top: 2.5rem;
+  }
+  .webCommands{
+      width: 13.3rem;
+      font-size:2rem;
+  }
+  .imgsCalibration{margin-top: 3rem;}
+ }
+
+ /* Extra large devices (large desktops, 1200px and up to 1799) */
+@media (min-width: 1200px) and (max-width: 1799px) {
+  html{font-size: 20px;}
+  #felixIntroImg{
+    width: 33%;
+    margin-top: 4rem;
+  }
+
+  .selectGroup {margin-top: .35rem;}
+  .buttonsGroup {margin-top: 1rem;}
+
+  .configButton{width:3.23rem; font-size: 1rem;}
+  .inputLegsCalibration .inputCustomPoseCalibration{width: 5.5rem;}
+  .configButtonHK { width: 4.6rem; }
+
+  .h2Calibrations{
+    margin-top: 2rem;
+  }
+  #felixLegsConfig{
+    width: 24.7rem;
+    margin-top: 1.2rem;
+  }
+  #felixhomeLegsConfig{
+    width: 20rem;
+    margin-top: 1.2rem;
+  }
+  .fa-smile-o{
+    margin-top: 3rem;
+  }
+
+  .done{
+    margin-top: 1.7rem;
+  }
+
+  h1{ font-size: 3.3rem; }
+  h2{ font-size: 2rem; }
+  p{
+    font-size: 1.4rem;
+    margin-top: 1.4rem;
+  }
+  .webCommands{
+      width: 13.3rem;
+      font-size:1.7rem;
+  }
+ }
+
+/* Extra large devices (large desktops, 1800px and up) */
+@media (min-width: 1800px) {
+  html{font-size: 22px;}
+  #felixIntroImg{
+    width: 50%;
+    margin-top: 5.5rem;
+  }
+  .felixIp .whereIsFelix{ margin-top: 16.3rem; }
+  #felixLegsConfig{
+    width: 26rem;
+  }
+  #felixhomeLegsConfig{
+    width: 20rem;
+  }
+  .fa-smile-o{
+    margin-top: 5rem;
+  }
+  .done{
+    margin-top: 2.5rem;
+  }
+  h1{ font-size: 4.3rem; }
+  h2{ font-size: 2.8rem; }
+  p{
+    font-size: 1.8rem;
+    margin-top: 1.4rem;
+  }
+  .webCommands{
+      width: 13.3rem;
+      font-size:2rem;
+  }
+ }
+

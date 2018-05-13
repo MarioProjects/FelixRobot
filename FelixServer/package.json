@@ -1,0 +1,25 @@
+{
+  "name": "(felix-quadruped)",
+  "version": "1.0.0",
+  "description": "This is the server for configurate and control Felix. Welcome.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarioProjects/FelixServer.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mario",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "firebase": "^3.6.7",
+    "johnny-five": "^0.10.6",
+    "socket.io": "^1.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

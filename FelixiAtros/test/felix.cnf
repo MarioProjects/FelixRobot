@@ -1,0 +1,21 @@
+samples = /tmp/felix.CC
+save-lattices = 0
+lattice-directory = graph
+
+[decoder]
+hmm = test/models/albayzin_iatros_64gs.hmm
+lexicon = test/models/felix.lx
+lexicon-type = HTK
+grammar = test/models/felix.gr
+grammar-type = FSM
+beam = 100
+grammar-scale-factor = 15
+word-insertion-penalty = -10
+start = <s>
+end = </s>
+histogram-pruning = 100000
+
+[lattice]
+nbest = 1
+nnode = 1
+

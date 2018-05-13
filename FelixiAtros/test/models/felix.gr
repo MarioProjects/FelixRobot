@@ -1,0 +1,29 @@
+
+State 0 i = 1 c = 1
+0 1 "sientate"     	        p = 0.125
+0 1 "camina"      	        p = 0.125
+0 1 "para"  		        p = 0.125
+0 1 "patita"    	        p = 0.125
+0 1 "levantate"    	        p = 0.125
+0 1 "agachate"    	        p = 0.125
+
+State 1 c = 1 f = 0.5
+1 2 "un"        	        p = 0.1
+1 2 "dos"        	        p = 0.1
+1 2 "tres"       	        p = 0.1
+1 2 "cuatro"    	        p = 0.1
+1 2 "cinco"     	        p = 0.1
+1 2 "seis"     		        p = 0.1
+1 2 "siete"     	        p = 0.1
+1 2 "ocho"     		        p = 0.1
+1 2 "nueve"     	        p = 0.1
+1 2 "diez"     		        p = 0.1
+
+State 2 c = 1
+2 3 "segundo"               p = 0.03
+2 3 "segundos"              p = 0.47
+2 3 "minuto"                p = 0.03
+2 3 "minutos"               p = 0.47
+
+State 3 c = 1 f = 0.75
+3 0 "y"                     p = 0.25

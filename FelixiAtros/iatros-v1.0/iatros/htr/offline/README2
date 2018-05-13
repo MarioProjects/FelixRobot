@@ -1,0 +1,23 @@
+
+La secuencia de operaciones de preproceso que se han aplicado a las líneas de la base de datos IAMDB es:
+
+pngtopnm $f|pnmnorm -bpercent 5  -wpercent 70 |pnmnorm -bvalue 150  -wvalue 200 |pnmdepth 255|pgmmedian|pgmslant -M M -t 92 |pgmnormsize -c 3|pgmtextfea
+
+
+#####################################
+
+La secuencia de operaciones de preproceso que se han aplicado a cada una de las páginas de la base de datos Cristo_Salvador es:
+
+pgmborde -i $f -o $name -l 0.025 -r 0.025 > im_borde.pgm
+
+pnmnoraw im_borde.pgm|pgmsubstract -k 18 -o im_substract.pgm
+pgmRLSA -i im_substract.pgm -l 20|pgmtopbm|pbmclean -t 0.99 |pnmdepth 255 |pnmnoraw> im_rlsa_clean.pgm
+pgmresta -i im_substract.pgm  -r im_rlsa_clean.pgm |pgmslope_MVPH -g -v 1 -o output.pgm
+
+
+./pgmSegLines -i output.pgm -f -p -x
+
+
+Una vez segmentadas las páginas en líneas la secuencia de operaciones que se le aplica a cada línea es:
+
+cat $f|pnmdepth 255|pgmskew| pgmslant -M M|pgmnormsize -c 5|pnmcrop -white |pgmtextfea -c 20 -V 4 -O 4 -F 2
